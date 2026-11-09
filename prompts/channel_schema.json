@@ -1,0 +1,24 @@
+{
+  "ontology_version": "k8_v1",
+  "K_anchored": 8,
+  "M_free": 2,
+  "global_channel": "Global-Structure",
+  "total_channels": 11,
+  "anchored_channels": [
+    {"channel_index": 1, "name": "Tech",       "k8_code": "K1", "description": "Technology, startup, software, digital product, and professional innovation activities."},
+    {"channel_index": 2, "name": "Social",     "k8_code": "K2", "description": "General socializing, dating, entertainment, game nights, and hobby-centered gatherings with strong social intent."},
+    {"channel_index": 3, "name": "Arts",       "k8_code": "K3", "description": "Arts, music, film, design, photography, writing, crafts, and cultural creation or appreciation."},
+    {"channel_index": 4, "name": "Health",     "k8_code": "K4", "description": "Fitness, sports, outdoor activities, wellbeing, and support-oriented health-related participation."},
+    {"channel_index": 5, "name": "Education",  "k8_code": "K5", "description": "Learning, study, reading, workshops, and intellectually oriented knowledge exchange."},
+    {"channel_index": 6, "name": "Community",  "k8_code": "K6", "description": "Neighborhood, civic, political, family, animal, and community-support activities."},
+    {"channel_index": 7, "name": "Food",       "k8_code": "K7", "description": "Food-, drink-, dining-, tasting-, and culinary-centered meetup activities."},
+    {"channel_index": 8, "name": "Diversity",  "k8_code": "K8", "description": "Identity, ethnicity, faith, spirituality, alternative lifestyle, and belief-centered communities."}
+  ],
+  "free_channels": [
+    {"channel_index": 9,  "name": "Free-1", "description": "Auxiliary interaction pattern not fully covered by anchored semantic channels."},
+    {"channel_index": 10, "name": "Free-2", "description": "Auxiliary interaction pattern not fully covered by anchored semantic channels."}
+  ],
+  "global": [
+    {"channel_index": 11, "name": "Global-Structure", "description": "Consensus structural context learned from mobility + POI + land-use global fusion."}
+  ]
+}

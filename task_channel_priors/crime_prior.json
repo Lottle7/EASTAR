@@ -1,0 +1,104 @@
+{
+  "task": "crime",
+  "weights": [
+    0.03,
+    0.16,
+    0.07,
+    0.06,
+    0.03,
+    0.14,
+    0.16,
+    0.07,
+    0.05,
+    0.05,
+    0.18
+  ],
+  "rationale": {
+    "1:Tech": "Tech districts can shape commuter inflows and valuable target concentration but are not the primary driver of broad crime intensity.",
+    "2:Social": "Social and nightlife-oriented gatherings strongly relate to crowding, late-hour activity, and potential conflict or victimization exposure.",
+    "3:Arts": "Arts and cultural zones often attract episodic evening foot traffic that can modestly affect crime opportunity patterns.",
+    "4:Health": "Health and recreation activity influences routine guardianship and public space use, but usually less than nightlife or disorder-related channels.",
+    "5:Education": "Education-oriented activity can indicate student presence and daily movement patterns, though it is a weaker general predictor of crime intensity.",
+    "6:Community": "Community activity reflects informal social control, local cohesion, and neighborhood organization that are highly relevant to crime variation.",
+    "7:Food": "Food and drink venues are major generators of ambient population, nighttime activity, and alcohol-linked disorder risk.",
+    "8:Diversity": "Diversity-related communities can proxy heterogeneous social landscapes and institutional presence, offering moderate contextual signal rather than direct risk.",
+    "9:Free-1": "Auxiliary interaction patterns may capture unanchored exposure or disorder signals not represented in the named channels.",
+    "10:Free-2": "A second free channel can absorb residual behavioral structure linked to crime opportunity or guardianship differences.",
+    "11:Global-Structure": "Global structural context is crucial because crime depends heavily on land use, mobility flows, accessibility, and cross-area urban form."
+  },
+  "channel_schema": [
+    {
+      "channel_index": 1,
+      "name": "Tech",
+      "description": "Technology, startup, software, digital product, and professional innovation activities.",
+      "source_category_id": 0
+    },
+    {
+      "channel_index": 2,
+      "name": "Social",
+      "description": "General socializing, dating, entertainment, game nights, and hobby-centered gatherings with strong social intent.",
+      "source_category_id": 1
+    },
+    {
+      "channel_index": 3,
+      "name": "Arts",
+      "description": "Arts, music, film, design, photography, writing, crafts, and cultural creation or appreciation.",
+      "source_category_id": 2
+    },
+    {
+      "channel_index": 4,
+      "name": "Health",
+      "description": "Fitness, sports, outdoor activities, wellbeing, and support-oriented health-related participation.",
+      "source_category_id": 3
+    },
+    {
+      "channel_index": 5,
+      "name": "Education",
+      "description": "Learning, study, reading, workshops, and intellectually oriented knowledge exchange.",
+      "source_category_id": 4
+    },
+    {
+      "channel_index": 6,
+      "name": "Community",
+      "description": "Neighborhood, civic, political, family, animal, and community-support activities.",
+      "source_category_id": 5
+    },
+    {
+      "channel_index": 7,
+      "name": "Food",
+      "description": "Food-, drink-, dining-, tasting-, and culinary-centered meetup activities.",
+      "source_category_id": 6
+    },
+    {
+      "channel_index": 8,
+      "name": "Diversity",
+      "description": "Identity, ethnicity, faith, spirituality, alternative lifestyle, and belief-centered communities.",
+      "source_category_id": 7
+    },
+    {
+      "channel_index": 9,
+      "name": "Free-1",
+      "description": "Auxiliary interaction pattern not fully covered by anchored semantic channels.",
+      "source_category_id": null
+    },
+    {
+      "channel_index": 10,
+      "name": "Free-2",
+      "description": "Auxiliary interaction pattern not fully covered by anchored semantic channels.",
+      "source_category_id": null
+    },
+    {
+      "channel_index": 11,
+      "name": "Global-Structure",
+      "description": "Consensus structural context learned from mobility + POI + land-use global fusion.",
+      "source_category_id": null
+    }
+  ],
+  "meta": {
+    "mode": "llm",
+    "model": "gpt-5.4",
+    "temperature": 0.1,
+    "k": 8,
+    "m": 2
+  }
+}

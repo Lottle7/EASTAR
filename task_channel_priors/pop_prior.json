@@ -1,0 +1,104 @@
+{
+  "task": "pop",
+  "weights": [
+    0.05,
+    0.06,
+    0.04,
+    0.08,
+    0.07,
+    0.16,
+    0.09,
+    0.06,
+    0.03,
+    0.03,
+    0.33
+  ],
+  "rationale": {
+    "1:Tech": "Tech activity indicates employment centers and commuter support, which relates moderately to nearby resident population.",
+    "2:Social": "Social gatherings reflect everyday local demand and neighborhood livability, giving a modest signal for residential presence.",
+    "3:Arts": "Arts and cultural activity can mark attractive mixed-use areas but is less directly tied to population scale than core residential functions.",
+    "4:Health": "Health and recreation amenities support daily resident life and are commonly associated with stable neighborhood population.",
+    "5:Education": "Education-related activity often co-locates with households and long-term community knowledge infrastructure, providing a moderate population cue.",
+    "6:Community": "Community-oriented activity strongly reflects neighborhood life, family presence, and civic embeddedness that align with residential population.",
+    "7:Food": "Food and dining activity captures routine local consumption and service intensity that often scales with nearby residents.",
+    "8:Diversity": "Identity and faith-centered communities can indicate enduring residential enclaves and social cohesion, offering a modest residential signal.",
+    "9:Free-1": "This auxiliary pattern may capture residual local interaction structure relevant to population, but its role is uncertain and secondary.",
+    "10:Free-2": "This auxiliary pattern may encode additional unexplained residential behavior, though it is likely weaker than anchored channels.",
+    "11:Global-Structure": "Population density depends most on broad land-use, accessibility, mobility, and built-form context, making global structure the dominant signal."
+  },
+  "channel_schema": [
+    {
+      "channel_index": 1,
+      "name": "Tech",
+      "description": "Technology, startup, software, digital product, and professional innovation activities.",
+      "source_category_id": 0
+    },
+    {
+      "channel_index": 2,
+      "name": "Social",
+      "description": "General socializing, dating, entertainment, game nights, and hobby-centered gatherings with strong social intent.",
+      "source_category_id": 1
+    },
+    {
+      "channel_index": 3,
+      "name": "Arts",
+      "description": "Arts, music, film, design, photography, writing, crafts, and cultural creation or appreciation.",
+      "source_category_id": 2
+    },
+    {
+      "channel_index": 4,
+      "name": "Health",
+      "description": "Fitness, sports, outdoor activities, wellbeing, and support-oriented health-related participation.",
+      "source_category_id": 3
+    },
+    {
+      "channel_index": 5,
+      "name": "Education",
+      "description": "Learning, study, reading, workshops, and intellectually oriented knowledge exchange.",
+      "source_category_id": 4
+    },
+    {
+      "channel_index": 6,
+      "name": "Community",
+      "description": "Neighborhood, civic, political, family, animal, and community-support activities.",
+      "source_category_id": 5
+    },
+    {
+      "channel_index": 7,
+      "name": "Food",
+      "description": "Food-, drink-, dining-, tasting-, and culinary-centered meetup activities.",
+      "source_category_id": 6
+    },
+    {
+      "channel_index": 8,
+      "name": "Diversity",
+      "description": "Identity, ethnicity, faith, spirituality, alternative lifestyle, and belief-centered communities.",
+      "source_category_id": 7
+    },
+    {
+      "channel_index": 9,
+      "name": "Free-1",
+      "description": "Auxiliary interaction pattern not fully covered by anchored semantic channels.",
+      "source_category_id": null
+    },
+    {
+      "channel_index": 10,
+      "name": "Free-2",
+      "description": "Auxiliary interaction pattern not fully covered by anchored semantic channels.",
+      "source_category_id": null
+    },
+    {
+      "channel_index": 11,
+      "name": "Global-Structure",
+      "description": "Consensus structural context learned from mobility + POI + land-use global fusion.",
+      "source_category_id": null
+    }
+  ],
+  "meta": {
+    "mode": "llm",
+    "model": "gpt-5.4",
+    "temperature": 0.1,
+    "k": 8,
+    "m": 2
+  }
+}

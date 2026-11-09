@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+runs/
+# Private Meetup-derived event arrays
+/data_*/semantic/
+/raw_data/
+/raw_data_big/
+*.log
+.DS_Store
